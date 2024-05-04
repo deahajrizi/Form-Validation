@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div id="messageName"></div>
+        <div id="messageSurname"></div>
+        <input type="text" id="name" name="name" placeholder="Votre nom" pattern="[A-Za-z]{2,}">
+
+
+        <input type="text" id="surname" name="surname" placeholder="Votre prénom" pattern="[A-Za-z]{2,}">
+
+        <div id="messageAddress"></div>
+        <div id="messageNPA"></div>
+        <input type="text" id="address" name="address" placeholder="Votre adresse">
+
+        <input type="text" id="npa" name="npa" placeholder="Votre code postal" pattern="[0-9]{4}">
+        <div id="messageCity"></div>
+        <input type="text" id="city" name="city" placeholder="Votre ville">
+
+        <div id="messageTel"></div>
+        <div id="messageEmail"></div>
+        <input type="tel" id="tel" name="tel" placeholder="Votre numéro">
+
+
+        <input type="email" id="email" name="email" placeholder="Votre e-mail">
+
+        <div id="messageMsg"></div>
+        <textarea id="msg" placeholder="Votre message ici"></textarea>
+
+        <button id="submitButton">Submit</button>
+    </form>
+    <div id="modalContainer">
+        <div id="modal">
+            <p id="modalText">Votre message a bien été envoyé!</p>
+            <button id="modalCloseButton">Fermer</button>
+        </div>
+    </div>
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
